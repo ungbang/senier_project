@@ -21,7 +21,7 @@ class OptionsWindow(QMainWindow):
 
         next_button1 = QToolButton()
         next_button1.setText("표정 분석")
-        next_button1.setIcon(QIcon("C:/Python/230518 senior project/icon.jpg"))
+        next_button1.setIcon(QIcon("C:/Python/230518 senior project/Emotion-recognition-master/icon.jpg"))
         next_button1.setIconSize(QSize(150, 150))
         next_button1.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
         next_button1.setStyleSheet("QToolButton {"
@@ -41,7 +41,7 @@ class OptionsWindow(QMainWindow):
 
         next_button2 = QToolButton()
         next_button2.setText("표정 연습")
-        next_button2.setIcon(QIcon("C:/Python/230518 senior project/icon.jpg"))
+        next_button2.setIcon(QIcon("C:/Python/230518 senior project/Emotion-recognition-master/icon.jpg"))
         next_button2.setIconSize(QSize(150, 150))
         next_button2.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
         next_button2.setStyleSheet("QToolButton {"
@@ -66,10 +66,10 @@ class OptionsWindow(QMainWindow):
         next_button2.clicked.connect(self.go_to_expression_practice)
 
     def go_to_emotion_analysis(self):
-        self.execute_external_program("C:/Python/230518 senior project/#3-1.py")
+        self.execute_external_program("C:/Python/230518 senior project/Emotion-recognition-master/#3-1.py")
 
     def go_to_expression_practice(self):
-        self.execute_external_program("C:/Python/230518 senior project/#3-2.py")
+        self.execute_external_program("C:/Python/230518 senior project/Emotion-recognition-master/#3-2.py")
 
     def execute_external_program(self, program_path):
         process = QProcess()
